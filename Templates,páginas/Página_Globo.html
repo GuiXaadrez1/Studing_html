@@ -1,48 +1,72 @@
-<!doctype html>
-<html lang="en">
-    <head>
-    	<meta charset="utf-8">
-    	<meta name="viewport" content="width=device-width, initial-scale=1">
-    	<title>Globo.com</title>
-    </head>
-    <body>
-      <h1>Hello, world!</h1>
-      <p>Vamos montar a página da globo usando apenas htm</p>
-	
-        <table border = "1" align ="center" width="90%" border="0" cellpadding="0" cellspacing="0"> <!--Abre tabela-->
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Globo.com</title>
+</head>
+<body>
+    <h1>Hello, world!</h1>
+    <p>Vamos montar a página da globo usando apenas HTML</p>
 
-		<!--colspan usamos para mergiar, juntar colunas-->
-		<!--rowspan usamos para mergiar, juntar linhas-->
-        
-        <!--
-            cellpadding="0" → Define o espaçamento interno das células (distância entre o conteúdo e a borda da célula).
-            cellspacing="0" → Define o espaçamento externo entre as células (distância entre as bordas das células vizinhas).
-        -->		
-
+    <table border="1" align="center" width="50%">
+        <tr>
+            <!-- Usando colspan para combinar colunas -->
+            <th colspan="1" width="14%" height="100px">
+                <h1>PIB do Brasil cresce 3,4% em 2024, acima da taxa de 2023, segundo IBGE</h1>
+            </th>
+			<td width="15%" height="100px">
+                <h3>Vítima de ato racista na Libertadores Sub-20, atacante do Verdão chora na saída</h3>
+			</td>
+		</tr>
+        <tr>
+            <!-- Usando rowspan para combinar linhas -->
+            <td rowspan="2" width="14%" height="20px">
+                <ul>
+                    <li><small>Veja quais alimentos podem baratear com o imposto de importação zerado</small></li>
+                    <li><small>Lula afirma que é o ano da colheita. Tebet diz que o resultado surpreendeu</small></li>
+                    <li><small>Compare o desempenho do PIB com Lula, Bolsonaro, Temer e Dilma</small></li>
+                </ul>
+            </td>
+			<td width="15%" height="20px"><small><li>Vini: 'Até quando conmebol?'</li><small></td>
+		</tr>
+        <tr>
+			<td width="15%" height="100px">
+				<h3>João volta a quadra para treinar só após 20 minutos após estreia equilibrada</h3>
+			</td>
+		</tr>
 		<tr>
-		  <th colspan = "1" with = "28%" cellpadding="10" cellspacing="10"><h1>Pau do Brasil cresce 3,4% em 2024, acima da taxa de 2023, segundo IBGE</h1></th>        
-		<tr> 
-		<tr> 
-			<td rowspan="2" width="28%" cellpadding="10" cellspacing="10">
-                <li><small>Veja quais alimentos podem baratear com o imposto de importação zerado</small></li>
-                <li><small>Lula afirma que é o ano da colheita. Tebet diz que o resultado surpreendeu</small></li>
-                <li><small>Compara o desempenho do PIB com Lula, Bolsonaro,Temer e Dilma</small></li>
-
-            </td> <!--Colunas 1-->	
-		</tr>
-		<tr> 
-			<td>1,2</td> <!--Colunas 1-->
-			<td>1,2</td> <!--Colunas 2-->
-            <td>1,2</td>	
-		</tr>
-		<tr> 
-			<td>1,2</td> <!--Colunas 1-->
-			<td>1,2</td> <!--Colunas 2-->	
-            <td>1,2</td>
-        </tr>
-	</table>
-
-
-
-    </body>
+			<td rowspan="2" width="14%" height="100px">
+				<table border="1"align = "center" wight = "50%">
+					<tr>
+						<td width = "50%"><h4>'Tudo Caro': Por que não sentimos a economia crescer</h4></td>
+						<td width = "50%"><h4>Frente fria que deve por fim à onda de calor avançada</h4></td>
+						<td width = "50%"><h4>Trump suspende o uso de aviões militares para deportação</h4></td>
+					</tr>
+					<tr>
+						<td><li><small>Veja desempenho do PIB desde 1980 e projeções</small></li></td>
+						<td><li><small>La ninã, que impacta seca e chuva sera mais 'fraca'</small></li></td>
+						<td><li><small>Presidente do mexico conquista confiança</small></li></td>
+					</tr>
+				</table>	
+			</td>				
+			<td rowspan="1"width="10%" height="10px"><small><li>Djokovic elogia 'dedicação'</li><small></td>
+			<tr>
+				<td width="14%" height="100px">
+					<h3>Ancelloti revela:"Um jogador botava toalha na cara para não me ouvir.</h3>
+				</td> 	
+			</tr>
+			<td>
+				<table border="1"align = "center" wight = "50%">
+					<tr>
+						<td width = "50%"><h4>Coronel poder ser pior a Braga que Cid a Bolsonaro, diz blog</h4></td>
+						<td width = "50%"><h4>Militar fazia live enquanto menor incendiava homem</h4></td>
+						<td width = "50%"><h4>Dupla agredida por não ceder assento terá indenização</h4></td>
+					</tr>
+				</table>
+			</td>
+			<td width="15%" height="20px"><small><li>De reprovado na base à Seleção, Wesley cumpre profecia do Fla</li></small></td>	
+		</tr>		
+    </table>
+</body>
 </html>
