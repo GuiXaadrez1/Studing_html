@@ -1,0 +1,29 @@
+#div1{
+    max-width: 800px;
+    margin: left;
+    padding: 20px;
+}
+
+#h1div1{
+    text-align: left;
+    color: red;
+}
+
+.img_left{
+    margin: left;
+    padding: 20px; 
+}
+
+.lef{
+
+    color: red;
+    margin: left;
+    padding: 20px; 
+}
+
+.center{
+
+    color:red;
+    margin: auto 0;
+    padding: 200px;
+}
