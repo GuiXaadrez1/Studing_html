@@ -1,33 +1,66 @@
-/* resetando o site e deixando ele totalmente centralizado*/
+/* Resetando margens e preenchimentos padrão dos elementos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    list-style: none; /* Remove os estilos padrão de listas */
+    text-decoration: none; /* Remove sublinhado dos links */
 }
 
-/*nosso id criado para listas não ordenadas*/
-#ul_menu{
-    list-style-type: none;
-    padding: 0;
-    background-color: #C0C0C0;
+/* Criando variáveis CSS para reutilização de cores */
+:root{
+    --red: #d63a25;
+    --white: #fff;
+    --dark: #000;
 }
 
-/*o primeiro é o nosso id e o segundo é o elemento do id que desejamos modificar*/
-#ul_menu li{
-    display: inline;
+/* Estilizando o corpo do site */
+.body{
+    color: var(--dark);
+    background: var(--white);
 }
 
-#ul_menu li a{
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 20px;   
-}
-
-/*criando um efeito que quando um componente html é clicado, ele mudar de cor*/
-
-#ul_menu li a:hover{
+.navigation {
+    display: flex; /* Ativa flexbox */
+    justify-content: space-between; /* Mantém logo à esquerda e menu à direita */
+    align-items: center; /* Centraliza verticalmente os itens */
+    padding: 1px 40px;
+    box-shadow: 0 0.1rem 0.5rem orange;
+    width: 100%;
+    height: 100%;
     background-color: gold;
+    transition: all 0.5s;
+}
+
+.navigation img {
+    height: 100px;
+    width: auto;
+    margin-top: 20px;
+}
+
+/* Estilizando a lista de navegação */
+#ul_menu {
+    display: flex; /* Usa flexbox para alinhar os itens */
+    gap: 20px; /* Espaçamento entre os itens do menu */
+    list-style-type: none; /* Remove os marcadores padrão da lista */
+    padding: 10px;
+    margin: 10px;
+    background-color: black; /* Remove qualquer fundo indesejado */
+    border-radius: 20px; /* colocando borda de 20px*/
+}
+
+/* Estilizando os itens do menu */
+#ul_menu li a {
+    display: inline-block; /* Permite aplicar padding corretamente */
+    text-decoration: none; /* Remove sublinhado */
+    color: #fff; /* Define a cor do texto */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 10px 20px; /* Espaçamento interno para melhor usabilidade */
+}
+
+/* Criando um efeito de hover para mudança de cor ao passar o mouse */
+#ul_menu li a:hover {
+    background-color: red;
 }
