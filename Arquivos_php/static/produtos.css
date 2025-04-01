@@ -4,7 +4,7 @@
     height: 100%;
     display: grid ;
     grid-template-columns: 300px 300px; /* devinimos os números de colunas e o tamnho de cada uma delas*/
-    grid-template-rows: 300px 300px; /* nesse caso já são as linhas*/
+    grid-template-rows: 300px 300px 300px; /* nesse caso já são as linhas*/
     gap: 10px; /*espaçamento geral dos elemtnos na grid*/
     align-items: center; /* permite manipularmos os elementos dentro da nossa div/caixinha no eixo y*/
     justify-items: start; /* permite manipular a posição dos elementos que estão dentro das nossas caixinhas/div*/
