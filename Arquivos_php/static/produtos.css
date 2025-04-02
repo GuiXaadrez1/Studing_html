@@ -3,11 +3,15 @@
     width: 100%;
     height: 100%;
     display: grid ;
-    grid-template-columns: 300px 300px; /* devinimos os números de colunas e o tamnho de cada uma delas*/
-    grid-template-rows: 300px 300px 300px; /* nesse caso já são as linhas*/
-    gap: 10px; /*espaçamento geral dos elemtnos na grid*/
+    grid-template-columns: repeat(auto-fill,200px); /* definimos os números de colunas e o tamnho de cada uma delas*/
+    /*auto-fill serve para deixar as grids mais reponsivas*/
+    grid-template-rows: 300px, 300px; /* nesse caso já são as linhas*/
+    /*gap: 10px; /*espaçamento geral dos elemtnos na grid*/
     align-items: center; /* permite manipularmos os elementos dentro da nossa div/caixinha no eixo y*/
-    justify-items: start; /* permite manipular a posição dos elementos que estão dentro das nossas caixinhas/div*/
+    justify-items: center; /* permite manipular a posição dos elementos que estão dentro das nossas caixinhas/div*/
+    /*grid-template-areas:"green red"  /* vamos definir e organizar cada um das nossas caixinhas/divs dentro do nosso conteiner com grids, é uma forma de manipular e organizar*/
+    /*"blue yellow";   /*primeira e segunda linha*/
+
 }   
 /* se tirarmos o tamnho das divs, eles vão se alongar e ocupar todo o espaço disponível*/
 div{
@@ -17,21 +21,40 @@ div{
 
 .gree{
     background-color: green;
-    grid-row: 2; /* linha e coluna que ela ocupa*/
-    grid-column: 1; /*linha e coluna que esse elemento vai ocupar*/
+    /*grid-row: 2; /* linha e coluna que ela ocupa*/
+    /*grid-column: 1; /*linha e coluna que esse elemento vai ocupar*/
+    /*com grid-template-areas usamos o grid-areas e colocamos o nome do objeto para manipular a posição da nossa caixinha*/
+    /*grid-area: red;*/
 }
 .red{
     background-color: red;
+    /*grid-area: green;*/
 }
 .blue{
     background-color: blue;
+   /* grid-area: yellow;*/
 }
 .yellow{
     background-color: yellow;
+    /*grid-area: blue;*/
 }
 
 /*
     quando não definimos o tamanho da nossas div e usamos aling-items e justify-items: start;
     nossas caixinhas que seriam manipuladas divs dentro de outras divs (elementos), não existem
+
+*/
+/*
+    No grid-area, se não possui o elemento ou nome ao qual aquele elemento se refe no grid-templates-area
+    o css vai deixar vazio aquela linha criada
+    Caso seja necessário colocar outro que já exteja posicionado, esse elemento vai ocupar o espaço dele
+    e o de outro ao qual queremos posicionar, para fazer um teste, basta tirar o tamnho e a largura pré-definida
+
+*/
+/*
+    Se na hora de criar asa colunas em grid-templares-area e colocarmos o repeat com auto-fill
+    conseguimos fazer um preenchimento dinâmico dos nossos elementos
+    para isso devemos tirar o gri-templates-area, pois este pré-define fixa aqueles elementos naquela
+    coluna
 
 */
