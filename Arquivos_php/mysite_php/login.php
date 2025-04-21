@@ -12,7 +12,8 @@
             
             <img src="logo_ecommerce.png" alt="Logo">
             
-            <form method="post" action="index.php?tentativa=1">
+            <!--<form method="post" action="index.php?tentativa=1"> foi utilizado para mostrar o funcionamento do ?, enviar requisições get por padrão-->
+            <form method="post" action="index.php?">
                 
                 <label for="nome">Nome Completo:</label>
                 <input type="text" id="nome" name="nome" placeholder = 'Digite seu nome' value="" required>

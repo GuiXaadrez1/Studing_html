@@ -1,15 +1,6 @@
 <?php
-session_start(); /* Criando variável de sessão*/
-$_SESSION["nome"] = $_POST["nome"];
-$_SESSION["senha"] = $_POST["senha"];
-$_SESSION["tentativa"] = $_GET["tentativa"];
-
-$conn = pg_connect("host=localhost dbname=produtos user=postgres password=32481024");
-if (!$conn) {
-    echo "Erro na conexão com o banco de dados.";
-}
+include 'conexao.php';
 ?>
-
 <!DOCTYPE html>
     <html lang="pt-BR">
         <head> <!-- Cabeçalho podemos configurar meta dados -->
@@ -25,7 +16,7 @@ if (!$conn) {
                     <ul id="ul_menu">
                         <li><a href="index.php">home</a></li>
                         <li><a href="produtos.php">produtos</a></li>
-                        <li><a href="#">produto</a></li>
+                        <li><a href="produto.php">produto</a></li>
                         <li><a href="login.php">saida</a></li>                
                     </ul>
                 </nav>
@@ -38,7 +29,7 @@ if (!$conn) {
                     
                     ?> <!-- Lendo variáveis Get e Post direto da Session-->
                     <p>Bem Vindo: <?php echo($_SESSION["nome"])?></p>
-                    <p>Você entrou na página principal após: <?php echo($_SESSION["tentativa"])?> tentativas</p>
+                    <!--<p>Você entrou na página principal após: </*?php echo($_SESSION["tentativa"])*/?> tentativas</p>-->
                 </session>
             </main>
         </body>

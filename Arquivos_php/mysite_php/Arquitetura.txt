@@ -1,0 +1,18 @@
+O sistema está sendo desenvolvido com uma arquitetura monolítica, onde todas as camadas (front-end, back-end e banco de dados) estão centralizadas e executando no mesmo servidor.
+
+Tecnologias e Estrutura:
+Servidor local: XAMPP (Apache + PHP)
+
+Back-end: PHP
+
+Front-end: HTML embutido diretamente nos arquivos .php e CSS inline ou com arquivos no mesmo diretório
+
+Banco de dados: PostgreSQL
+
+Conexão com o banco de dados:
+
+Utiliza a extensão nativa do PHP para PostgreSQL (pgsql)
+
+A extensão foi ativada manualmente no arquivo de configuração do PHP (php.ini) do XAMPP
+
+As conexões são feitas diretamente nos arquivos PHP com funções como pg_connect e pg_query

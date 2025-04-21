@@ -1,8 +1,7 @@
 <?php
-$conn = pg_connect("host=localhost dbname=produtos user=postgres password=32481024");
-if (!$conn) {
-    echo "Erro na conexão com o banco de dados.";
-}
+
+    require "conexao.php";
+
 ?>
 <!DOCTYPE html5>
     <html lang="pt-BR">
@@ -21,7 +20,7 @@ if (!$conn) {
                     <ul id="ul_menu">
                     <li><a href="index.php">home</a></li>
                         <li><a href="produtos.php">produtos</a></li>
-                        <li><a href="#">produto</a></li>
+                        <li><a href="produto.php">produto</a></li>
                         <li><a href="login.php">saida</a></li>                
                     </ul>
                 </nav>
